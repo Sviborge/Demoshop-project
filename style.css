@@ -79,6 +79,10 @@ body {
     transform: rotate(180deg);
     transition: 0.25s ease-in-out;
 }
+.drop:hover a{
+    color: white;
+    background-color: #2c71b8;
+}
 .drop:hover .dropdown-list{
     display: block;
 }
@@ -182,7 +186,65 @@ body {
     color: rgba(255, 255, 255, 0.75);
 }
 .filter {
+    padding: 30px;
     background-color: rgba(86, 141, 198, 0.5);
+    color: white;
+}
+.filter-option {
+    line-height: 40px;
+    margin-top: 40px;
+}
+.filter-option:first-child {
+    margin-top: 0;
+}
+.filter-option h3{
+    font-size: 21px;
+    font-weight: bold;
+}
+label{
+    display: flex;
+    font-size: 21px;
+    font-weight: 300;
+    align-items: center;
+}
+input[type="checkbox"] {
+    display: none;
+}
+label:before{
+    content: "";
+    display: block;
+    height: 10px;
+    width: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    margin-right: 10px;
+}
+input[type="checkbox"]:checked + label:before {
+    background-color: white;
+}
+.more-options{
+    font-size: 21px;
+    line-height: 40px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.filter-btn {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 210px;
+    border: 1px solid white;
+    background-color: #2b71b8;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.filter-btn a {
+    color: white;
+    text-decoration: none;
 }
 h1 {
     font-size: 48px;
